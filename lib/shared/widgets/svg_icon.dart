@@ -21,8 +21,8 @@ class SvgIcon extends StatelessWidget {
     return SvgPicture.asset(
       'assets/icons/$svgIconName.svg',
       color: color ?? kPrimaryColor,
-      height: height ?? 60.h,
-      width: width ?? 60.sw,
+      height: height ?? 35.h,
+      width: width ?? 35.sw,
     );
   }
 }

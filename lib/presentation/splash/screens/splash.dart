@@ -12,9 +12,9 @@ class SplashScreen extends StatelessWidget {
         state.map(
           initial: (_) {},
           authenticated: (_) =>
-              AutoRouter.of(context).replace(UserCheckScreenRoute()),
+              AutoRouter.of(context).replace(const UserCheckScreenRoute()),
           unauthenticated: (_) =>
-              AutoRouter.of(context).push(WelcomeScreenRoute()),
+              AutoRouter.of(context).push(const WelcomeScreenRoute()),
         );
       },
       child: const Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 @immutable
 class TTitle extends StatelessWidget {
@@ -9,9 +10,13 @@ class TTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeData = Theme.of(context).primaryTextTheme;
-    return Text(
-      text,
-      style: themeData.headline1!.copyWith(color: color),
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 0.1.sw),
+      child: Text(
+        text,
+        style: themeData.headline1!.copyWith(color: color),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

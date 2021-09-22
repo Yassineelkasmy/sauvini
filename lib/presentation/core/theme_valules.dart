@@ -5,3 +5,5 @@ const kPrimaryColor = Color(0xFFF34955);
 
 //fonts
 
+
+//Paddings

@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 
 @immutable
 class BodyText extends StatelessWidget {
-  const BodyText({Key? key, required this.text, this.color}) : super(key: key);
+  const BodyText({
+    Key? key,
+    required this.text,
+    this.color,
+    this.textAlign,
+  }) : super(key: key);
   final String text;
   final Color? color;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +18,7 @@ class BodyText extends StatelessWidget {
     return Text(
       text,
       style: themeData.bodyText1!.copyWith(color: color),
+      textAlign: textAlign ?? TextAlign.center,
     );
   }
 }

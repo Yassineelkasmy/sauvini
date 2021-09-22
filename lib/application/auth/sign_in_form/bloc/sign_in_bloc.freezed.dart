@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'sign_in_form_bloc.dart';
+part of 'sign_in_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,32 +14,41 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$SignInFormEventTearOff {
-  const _$SignInFormEventTearOff();
+class _$SignInEventTearOff {
+  const _$SignInEventTearOff();
 
   SignInWithGooglePressed signInWithGooglePressed() {
     return const SignInWithGooglePressed();
   }
+
+  UserTypeChanged userTypeChanged(UserType userType) {
+    return UserTypeChanged(
+      userType,
+    );
+  }
 }
 
 /// @nodoc
-const $SignInFormEvent = _$SignInFormEventTearOff();
+const $SignInEvent = _$SignInEventTearOff();
 
 /// @nodoc
-mixin _$SignInFormEvent {
+mixin _$SignInEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePressed,
+    required TResult Function(UserType userType) userTypeChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,36 +56,38 @@ mixin _$SignInFormEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(SignInWithGooglePressed value)
         signInWithGooglePressed,
+    required TResult Function(UserTypeChanged value) userTypeChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SignInFormEventCopyWith<$Res> {
-  factory $SignInFormEventCopyWith(
-          SignInFormEvent value, $Res Function(SignInFormEvent) then) =
-      _$SignInFormEventCopyWithImpl<$Res>;
+abstract class $SignInEventCopyWith<$Res> {
+  factory $SignInEventCopyWith(
+          SignInEvent value, $Res Function(SignInEvent) then) =
+      _$SignInEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SignInFormEventCopyWithImpl<$Res>
-    implements $SignInFormEventCopyWith<$Res> {
-  _$SignInFormEventCopyWithImpl(this._value, this._then);
+class _$SignInEventCopyWithImpl<$Res> implements $SignInEventCopyWith<$Res> {
+  _$SignInEventCopyWithImpl(this._value, this._then);
 
-  final SignInFormEvent _value;
+  final SignInEvent _value;
   // ignore: unused_field
-  final $Res Function(SignInFormEvent) _then;
+  final $Res Function(SignInEvent) _then;
 }
 
 /// @nodoc
@@ -88,7 +99,7 @@ abstract class $SignInWithGooglePressedCopyWith<$Res> {
 
 /// @nodoc
 class _$SignInWithGooglePressedCopyWithImpl<$Res>
-    extends _$SignInFormEventCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res>
     implements $SignInWithGooglePressedCopyWith<$Res> {
   _$SignInWithGooglePressedCopyWithImpl(SignInWithGooglePressed _value,
       $Res Function(SignInWithGooglePressed) _then)
@@ -107,15 +118,14 @@ class _$SignInWithGooglePressed
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SignInFormEvent.signInWithGooglePressed()';
+    return 'SignInEvent.signInWithGooglePressed()';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty(
-          'type', 'SignInFormEvent.signInWithGooglePressed'));
+      ..add(DiagnosticsProperty('type', 'SignInEvent.signInWithGooglePressed'));
   }
 
   @override
@@ -130,6 +140,7 @@ class _$SignInWithGooglePressed
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePressed,
+    required TResult Function(UserType userType) userTypeChanged,
   }) {
     return signInWithGooglePressed();
   }
@@ -138,6 +149,7 @@ class _$SignInWithGooglePressed
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
   }) {
     return signInWithGooglePressed?.call();
   }
@@ -146,6 +158,7 @@ class _$SignInWithGooglePressed
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
     required TResult orElse(),
   }) {
     if (signInWithGooglePressed != null) {
@@ -159,6 +172,7 @@ class _$SignInWithGooglePressed
   TResult map<TResult extends Object?>({
     required TResult Function(SignInWithGooglePressed value)
         signInWithGooglePressed,
+    required TResult Function(UserTypeChanged value) userTypeChanged,
   }) {
     return signInWithGooglePressed(this);
   }
@@ -167,6 +181,7 @@ class _$SignInWithGooglePressed
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
   }) {
     return signInWithGooglePressed?.call(this);
   }
@@ -175,6 +190,7 @@ class _$SignInWithGooglePressed
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
     required TResult orElse(),
   }) {
     if (signInWithGooglePressed != null) {
@@ -184,66 +200,216 @@ class _$SignInWithGooglePressed
   }
 }
 
-abstract class SignInWithGooglePressed implements SignInFormEvent {
+abstract class SignInWithGooglePressed implements SignInEvent {
   const factory SignInWithGooglePressed() = _$SignInWithGooglePressed;
 }
 
 /// @nodoc
-class _$SignInFormStateTearOff {
-  const _$SignInFormStateTearOff();
+abstract class $UserTypeChangedCopyWith<$Res> {
+  factory $UserTypeChangedCopyWith(
+          UserTypeChanged value, $Res Function(UserTypeChanged) then) =
+      _$UserTypeChangedCopyWithImpl<$Res>;
+  $Res call({UserType userType});
+}
 
-  _SignInFormState call(
+/// @nodoc
+class _$UserTypeChangedCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res>
+    implements $UserTypeChangedCopyWith<$Res> {
+  _$UserTypeChangedCopyWithImpl(
+      UserTypeChanged _value, $Res Function(UserTypeChanged) _then)
+      : super(_value, (v) => _then(v as UserTypeChanged));
+
+  @override
+  UserTypeChanged get _value => super._value as UserTypeChanged;
+
+  @override
+  $Res call({
+    Object? userType = freezed,
+  }) {
+    return _then(UserTypeChanged(
+      userType == freezed
+          ? _value.userType
+          : userType // ignore: cast_nullable_to_non_nullable
+              as UserType,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UserTypeChanged
+    with DiagnosticableTreeMixin
+    implements UserTypeChanged {
+  const _$UserTypeChanged(this.userType);
+
+  @override
+  final UserType userType;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'SignInEvent.userTypeChanged(userType: $userType)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'SignInEvent.userTypeChanged'))
+      ..add(DiagnosticsProperty('userType', userType));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is UserTypeChanged &&
+            (identical(other.userType, userType) ||
+                const DeepCollectionEquality()
+                    .equals(other.userType, userType)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userType);
+
+  @JsonKey(ignore: true)
+  @override
+  $UserTypeChangedCopyWith<UserTypeChanged> get copyWith =>
+      _$UserTypeChangedCopyWithImpl<UserTypeChanged>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() signInWithGooglePressed,
+    required TResult Function(UserType userType) userTypeChanged,
+  }) {
+    return userTypeChanged(userType);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
+  }) {
+    return userTypeChanged?.call(userType);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? signInWithGooglePressed,
+    TResult Function(UserType userType)? userTypeChanged,
+    required TResult orElse(),
+  }) {
+    if (userTypeChanged != null) {
+      return userTypeChanged(userType);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(SignInWithGooglePressed value)
+        signInWithGooglePressed,
+    required TResult Function(UserTypeChanged value) userTypeChanged,
+  }) {
+    return userTypeChanged(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
+  }) {
+    return userTypeChanged?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
+    TResult Function(UserTypeChanged value)? userTypeChanged,
+    required TResult orElse(),
+  }) {
+    if (userTypeChanged != null) {
+      return userTypeChanged(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserTypeChanged implements SignInEvent {
+  const factory UserTypeChanged(UserType userType) = _$UserTypeChanged;
+
+  UserType get userType => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UserTypeChangedCopyWith<UserTypeChanged> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+class _$SignInStateTearOff {
+  const _$SignInStateTearOff();
+
+  _SignInState call(
       {required bool showErrorMessages,
       required bool isSubmitting,
-      required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption}) {
-    return _SignInFormState(
+      required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption,
+      required Option<UserType> userTypeOption}) {
+    return _SignInState(
       showErrorMessages: showErrorMessages,
       isSubmitting: isSubmitting,
       authFailureOrSuccessOption: authFailureOrSuccessOption,
+      userTypeOption: userTypeOption,
     );
   }
 }
 
 /// @nodoc
-const $SignInFormState = _$SignInFormStateTearOff();
+const $SignInState = _$SignInStateTearOff();
 
 /// @nodoc
-mixin _$SignInFormState {
+mixin _$SignInState {
   bool get showErrorMessages => throw _privateConstructorUsedError;
   bool get isSubmitting => throw _privateConstructorUsedError;
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
       throw _privateConstructorUsedError;
+  Option<UserType> get userTypeOption => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SignInFormStateCopyWith<SignInFormState> get copyWith =>
+  $SignInStateCopyWith<SignInState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SignInFormStateCopyWith<$Res> {
-  factory $SignInFormStateCopyWith(
-          SignInFormState value, $Res Function(SignInFormState) then) =
-      _$SignInFormStateCopyWithImpl<$Res>;
+abstract class $SignInStateCopyWith<$Res> {
+  factory $SignInStateCopyWith(
+          SignInState value, $Res Function(SignInState) then) =
+      _$SignInStateCopyWithImpl<$Res>;
   $Res call(
       {bool showErrorMessages,
       bool isSubmitting,
-      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
+      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption,
+      Option<UserType> userTypeOption});
 }
 
 /// @nodoc
-class _$SignInFormStateCopyWithImpl<$Res>
-    implements $SignInFormStateCopyWith<$Res> {
-  _$SignInFormStateCopyWithImpl(this._value, this._then);
+class _$SignInStateCopyWithImpl<$Res> implements $SignInStateCopyWith<$Res> {
+  _$SignInStateCopyWithImpl(this._value, this._then);
 
-  final SignInFormState _value;
+  final SignInState _value;
   // ignore: unused_field
-  final $Res Function(SignInFormState) _then;
+  final $Res Function(SignInState) _then;
 
   @override
   $Res call({
     Object? showErrorMessages = freezed,
     Object? isSubmitting = freezed,
     Object? authFailureOrSuccessOption = freezed,
+    Object? userTypeOption = freezed,
   }) {
     return _then(_value.copyWith(
       showErrorMessages: showErrorMessages == freezed
@@ -258,41 +424,46 @@ class _$SignInFormStateCopyWithImpl<$Res>
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
+      userTypeOption: userTypeOption == freezed
+          ? _value.userTypeOption
+          : userTypeOption // ignore: cast_nullable_to_non_nullable
+              as Option<UserType>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$SignInFormStateCopyWith<$Res>
-    implements $SignInFormStateCopyWith<$Res> {
-  factory _$SignInFormStateCopyWith(
-          _SignInFormState value, $Res Function(_SignInFormState) then) =
-      __$SignInFormStateCopyWithImpl<$Res>;
+abstract class _$SignInStateCopyWith<$Res>
+    implements $SignInStateCopyWith<$Res> {
+  factory _$SignInStateCopyWith(
+          _SignInState value, $Res Function(_SignInState) then) =
+      __$SignInStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {bool showErrorMessages,
       bool isSubmitting,
-      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
+      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption,
+      Option<UserType> userTypeOption});
 }
 
 /// @nodoc
-class __$SignInFormStateCopyWithImpl<$Res>
-    extends _$SignInFormStateCopyWithImpl<$Res>
-    implements _$SignInFormStateCopyWith<$Res> {
-  __$SignInFormStateCopyWithImpl(
-      _SignInFormState _value, $Res Function(_SignInFormState) _then)
-      : super(_value, (v) => _then(v as _SignInFormState));
+class __$SignInStateCopyWithImpl<$Res> extends _$SignInStateCopyWithImpl<$Res>
+    implements _$SignInStateCopyWith<$Res> {
+  __$SignInStateCopyWithImpl(
+      _SignInState _value, $Res Function(_SignInState) _then)
+      : super(_value, (v) => _then(v as _SignInState));
 
   @override
-  _SignInFormState get _value => super._value as _SignInFormState;
+  _SignInState get _value => super._value as _SignInState;
 
   @override
   $Res call({
     Object? showErrorMessages = freezed,
     Object? isSubmitting = freezed,
     Object? authFailureOrSuccessOption = freezed,
+    Object? userTypeOption = freezed,
   }) {
-    return _then(_SignInFormState(
+    return _then(_SignInState(
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
@@ -305,19 +476,22 @@ class __$SignInFormStateCopyWithImpl<$Res>
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
+      userTypeOption: userTypeOption == freezed
+          ? _value.userTypeOption
+          : userTypeOption // ignore: cast_nullable_to_non_nullable
+              as Option<UserType>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_SignInFormState
-    with DiagnosticableTreeMixin
-    implements _SignInFormState {
-  const _$_SignInFormState(
+class _$_SignInState with DiagnosticableTreeMixin implements _SignInState {
+  const _$_SignInState(
       {required this.showErrorMessages,
       required this.isSubmitting,
-      required this.authFailureOrSuccessOption});
+      required this.authFailureOrSuccessOption,
+      required this.userTypeOption});
 
   @override
   final bool showErrorMessages;
@@ -325,27 +499,30 @@ class _$_SignInFormState
   final bool isSubmitting;
   @override
   final Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption;
+  @override
+  final Option<UserType> userTypeOption;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SignInFormState(showErrorMessages: $showErrorMessages, isSubmitting: $isSubmitting, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
+    return 'SignInState(showErrorMessages: $showErrorMessages, isSubmitting: $isSubmitting, authFailureOrSuccessOption: $authFailureOrSuccessOption, userTypeOption: $userTypeOption)';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'SignInFormState'))
+      ..add(DiagnosticsProperty('type', 'SignInState'))
       ..add(DiagnosticsProperty('showErrorMessages', showErrorMessages))
       ..add(DiagnosticsProperty('isSubmitting', isSubmitting))
       ..add(DiagnosticsProperty(
-          'authFailureOrSuccessOption', authFailureOrSuccessOption));
+          'authFailureOrSuccessOption', authFailureOrSuccessOption))
+      ..add(DiagnosticsProperty('userTypeOption', userTypeOption));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SignInFormState &&
+        (other is _SignInState &&
             (identical(other.showErrorMessages, showErrorMessages) ||
                 const DeepCollectionEquality()
                     .equals(other.showErrorMessages, showErrorMessages)) &&
@@ -356,7 +533,10 @@ class _$_SignInFormState
                     authFailureOrSuccessOption) ||
                 const DeepCollectionEquality().equals(
                     other.authFailureOrSuccessOption,
-                    authFailureOrSuccessOption)));
+                    authFailureOrSuccessOption)) &&
+            (identical(other.userTypeOption, userTypeOption) ||
+                const DeepCollectionEquality()
+                    .equals(other.userTypeOption, userTypeOption)));
   }
 
   @override
@@ -364,20 +544,21 @@ class _$_SignInFormState
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(showErrorMessages) ^
       const DeepCollectionEquality().hash(isSubmitting) ^
-      const DeepCollectionEquality().hash(authFailureOrSuccessOption);
+      const DeepCollectionEquality().hash(authFailureOrSuccessOption) ^
+      const DeepCollectionEquality().hash(userTypeOption);
 
   @JsonKey(ignore: true)
   @override
-  _$SignInFormStateCopyWith<_SignInFormState> get copyWith =>
-      __$SignInFormStateCopyWithImpl<_SignInFormState>(this, _$identity);
+  _$SignInStateCopyWith<_SignInState> get copyWith =>
+      __$SignInStateCopyWithImpl<_SignInState>(this, _$identity);
 }
 
-abstract class _SignInFormState implements SignInFormState {
-  const factory _SignInFormState(
+abstract class _SignInState implements SignInState {
+  const factory _SignInState(
       {required bool showErrorMessages,
       required bool isSubmitting,
-      required Option<Either<AuthFailure, Unit>>
-          authFailureOrSuccessOption}) = _$_SignInFormState;
+      required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption,
+      required Option<UserType> userTypeOption}) = _$_SignInState;
 
   @override
   bool get showErrorMessages => throw _privateConstructorUsedError;
@@ -387,7 +568,9 @@ abstract class _SignInFormState implements SignInFormState {
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
       throw _privateConstructorUsedError;
   @override
+  Option<UserType> get userTypeOption => throw _privateConstructorUsedError;
+  @override
   @JsonKey(ignore: true)
-  _$SignInFormStateCopyWith<_SignInFormState> get copyWith =>
+  _$SignInStateCopyWith<_SignInState> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -5,6 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData mainThemeData() {
   return ThemeData.light().copyWith(
+    secondaryHeaderColor: kPrimaryColor,
+    iconTheme: const IconThemeData(
+      color: kPrimaryColor,
+    ),
+    bottomAppBarColor: kPrimaryColor,
+    colorScheme: const ColorScheme.light().copyWith(
+      primary: kPrimaryColor,
+    ),
+    primaryIconTheme: const IconThemeData(color: kPrimaryColor),
     primaryColor: Colors.black,
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: kPrimaryColor,
@@ -13,7 +22,7 @@ ThemeData mainThemeData() {
     inputDecorationTheme: InputDecorationTheme(
       hintStyle: TextStyle(
         fontFamily: GoogleFonts.montserrat().fontFamily,
-        fontSize: 16.sp,
+        fontSize: 14.sp,
       ),
       focusColor: kPrimaryColor,
       focusedBorder: UnderlineInputBorder(

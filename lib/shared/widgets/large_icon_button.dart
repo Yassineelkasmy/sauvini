@@ -40,17 +40,21 @@ class LargeIconButton extends StatelessWidget {
               vertical: contentVPadding ?? 15.h,
               horizontal: contentHPadding ?? 10.w,
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                if (icon != null) icon!,
-                if (icon != null)
-                  SizedBox(
-                    width: 10.w,
+            child: icon != null
+                ? Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      icon!,
+                      SizedBox(
+                        width: 20.w,
+                      ),
+                      text
+                    ],
+                  )
+                : Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [text],
                   ),
-                text
-              ],
-            ),
           ),
         ),
       ),
